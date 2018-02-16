@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    color: #063779;
+}
+
+body {
+    background-color : rgb(216, 208, 187);
+}
+
+#results {
+    display: none;
+}
+
+

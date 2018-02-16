@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>M.I.S.T</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="navbar navbar-toggleable-md navbar-light bg-faded bg-secondary">
+
+    <img src="C:\Users\Utilisateur\Desktop\Fil rouge\Image\Logo.png">
+
+    <form class="form-inline">
+      <input class="form-control primary mr-sm-2" type="text" placeholder="Identifiant">
+      <input class="form-control mr-sm-2" type="text" placeholder="Mot de passe">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Valider</button>
+      
+    </form>
+
+  </header>
+
+  <div id="accordion">
+
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h1 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h1>SUSPECT</h1>
+          </button>
+        </h1>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-6">
+
+              <input type="text" class="form-control" id="nomSuspect" placeholder="Nom">
+              <br>
+              <input type="text" class="form-control" id="prenomSuspect" placeholder="Prénom">
+              <br>
+              <input type="number" class="form-control" id="dateDeNaissanceSuspect" placeholder="Date de naissance">
+              <br>
+              <input type="text" class="form-control" id="telephoneSuspect" placeholder="Telephone">
+              <br>
+              <input type="text" class="form-control" id="parentSuspect" placeholder="Lien de parenté">
+              <br>
+              <input type="text" class="form-control" id="lieuNaissanceSuspect" placeholder="Lieu de naissance">
+              <br>
+              <input type="text" class="form-control" id="lieuHabitationSuspect" placeholder="Lieu de d'habitation">
+
+            </div>
+
+            <div class="col-6">
+
+              <input type="text" class="form-control" id="condamnationSuspect" placeholder="Condamnation">
+              <br>
+              <input type="text" class="form-control" id="voitureSuspect" placeholder="Voiture">
+              <br>
+              <input type="text" class="form-control" id="armeSuspect" placeholder="Arme possédée">
+              <br>
+              <input type="text" class="form-control" id="cheveuxSuspect" placeholder="Couleur de cheveux">
+              <br>
+              <input type="text" class="form-control" id="yeuxSuspect" placeholder="Couleur des yeux">
+              <br>
+              <input type="number" class="form-control" id="documentSuspect" placeholder="Numero de document">
+              <br>
+              <input type="text" class="form-control" id="affaireSuspect" placeholder="Numéro d'affaire">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h1 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h1>ARME</h1>
+          </button>
+        </h1>
+      </div>
+
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" class="form-control" id="typeArme" placeholder="Types d'armes">
+              <br>
+              <input type="text" class="form-control" id="nomArmes" placeholder="Nom de l'arme">
+              <br>
+              <input type="number" class="form-control" id="numeroArme" placeholder="Numéro de série de l'arme">
+              <br>
+              <input type="text" class="form-control" id="constructionArme" placeholder="Pays de construction">
+              <br>
+            </div>
+
+            <div class="col-6">
+              <input type="text" class="form-control" id="munitionArme" placeholder="Type de munitions">
+              <br>
+              <input type="text" class="form-control" id="calibreArme" placeholder="Calibre de l'arme">
+              <br>
+              <input type="text" class="form-control" id="porteArme" placeholder="Portée de l'arme">
+              <br>
+              <input type="text" class="form-control" id="capacitéArme" placeholder="Capacité de l'arme">
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h1 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h1>VEHICULE</h1>
+          </button>
+        </h1>
+      </div>
+
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" class="form-control" id="motorisationVehicule" placeholder="Motorisation">
+              <br>
+              <input type="number" class="form-control" id="anneeProductionVehicule" placeholder="Année de production">
+              <br>
+              <input type="text" class="form-control" id="cylindreVehicule" placeholder="Cylindrée véhicule">
+              <br>
+              <input type="text" class="form-control" id="puissanceVehicule" placeholder="Puissance véhicule">
+              <br>
+              <input type="text" class="form-control" id="boiteVitesse" placeholder="Boite de vitesse">
+
+            </div>
+
+            <div class="col-6">
+              <input type="text" class="form-control" id="paysAssemblageVehicule" placeholder="Pays d'assemblage">
+              <br>
+              <input type="text" class="form-control" id="immatriculation" placeholder="Immatriculation">
+              <br>
+              <input type="text" class="form-control" id="longueur" placeholder="Longueur">
+              <br>
+              <input type="text" class="form-control" id="largeur" placeholder="Largeur">
+              <br>
+              <input type="text" class="form-control" id="hauteur" placeholder="Hauteur">
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h1 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h1>AFFAIRE</h1>
+          </button>
+        </h1>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <input type="number" class="form-control" id="dateAffaire" placeholder="Date de l'affaire">
+              <br>
+              <input type="text" class="form-control" id="affairePolicier" placeholder="Policier en charge">
+              <br>
+              <input type="text" class="form-control" id="afairearmeImplique" placeholder="Armes impliquées">
+              <br>
+              <input type="text" class="form-control" id="vehiculeAffaire" placeholder="Vehicules impliqués">
+              <br>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" id="autreAffaire" placeholder="Autre affaire">
+              <br>
+              <input type="text" class="form-control" id="pieceConvictionAffaire" placeholder="Pièces à conviction">
+              <br>
+              <input type="text" class="form-control" id="lieuAffaire" placeholder="Lieu de l'affaire">
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-12" id="bouton" onclick="showResults()">
+          <button type="button" class="btn btn-info btn-lg btn-block">VALIDER</button>
+      </div>
+
+  </div>
+   
+    <!-- SECTION RESULTATS -->
+    
+    <div class="row" id="results">
+    
+        <div class="card col-3">
+          <img class="card-img-top" src="C:\Users\Utilisateur\Desktop\Fil rouge\Image\suspect.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">KAISER SÖZE</h5>
+            <p class="card-text">THE USUAL SUSPECTS</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#carteSuspect">Détail</button>
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img class="card-img-top" src="C:\Users\Utilisateur\Desktop\Fil rouge\Image\kemper.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">ED KEMPER</h5>
+            <p class="card-text">MIND HUNTER</p>
+            <a href="" class="btn btn-primary">Détail</a>
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img class="card-img-top" src="C:\Users\Utilisateur\Desktop\Fil rouge\Image\lecter.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">HANNIBAL LECTER</h5>
+            <p class="card-text">LE SILENCE DES AGNEAUX</p>
+            <a href="" class="btn btn-primary">Détail</a>
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img class="card-img-top" src="C:\Users\Utilisateur\Desktop\Fil rouge\Image\mesrines.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">JACQUES MESRINE</h5>
+            <p class="card-text">ENNEMI PUBLIQUE N°1</p>
+            <a href="" class="btn btn-primary">Détail</a>
+          </div>
+        </div>
+
+        <div class="col-12" id="bouton" onclick="showResults()">
+            <button type="button" class="btn btn-info btn-lg btn-block">RETOUR</button>
+        </div>
+
+    </div>
+
+    <!-- SECTION DETAIL RESULTAT -->
+
+    <div class="modal fade" id="carteSuspect" tabindex="-1" role="dialog" aria-labelledby="#carteSuspect" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <a>
+              <h5 class="modal-title" id="#photoSuspect">KAISER SÖZE</h5>
+            </a>
+          </div>
+
+          <img class="card-img-top" src="C:\Users\Utilisateur\Desktop\Fil rouge\Image\suspect.png" alt="Card image cap">
+
+          <div class="modal-body">
+            Supect principal du film Usual suspects.
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Modif</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+</body>
+
+<script>
+
+function showResults() {
+  var x = document.getElementById("results");
+  if (x.style.display === "inline-flex") {
+      x.style.display = "none";
+  } else {
+      x.style.display = "inline-flex";
+  }
+
+
+  var y = document.getElementById("accordion");
+  if (y.style.display === "none") {
+      y.style.display = "block";
+  } else {
+      y.style.display = "none";
+  }
+}
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+</html>
